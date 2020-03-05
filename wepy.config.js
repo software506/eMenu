@@ -1,8 +1,9 @@
 const path = require('path');
+const db = require("./db.js");
 
 if (process.env.ENV_CONFIG) {
   const env = require(`./config/env/${process.env.ENV_CONFIG}.js`)
-  console.log(env.HOME_API_URL)
+  db.write(` export default { HOME_API_URL: ${env.HOME_API_URL} } `)
 }
 
 var prod = process.env.NODE_ENV === 'production';

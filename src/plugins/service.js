@@ -1,6 +1,5 @@
 import eventHub from '@/common/eventHub';
-
-const API_URL = 'https://tcb-api.tencentcloudapi.com'
+import env from '@/env';
 
 const codeMessage = {
   200: '服务器成功返回请求的数据。',
@@ -66,7 +65,7 @@ function Service () {
       const opts = {
         ...this.defaults,
         ...options,
-        url: `${API_URL}${url}`,
+        url: `${env.HOME_API_URL}${url}`,
         success (res) {
           try {
             checkStatus(res);
