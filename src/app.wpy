@@ -1,4 +1,8 @@
 <style lang="less">
+@import (css) "./static/weui.wxss";
+</style>
+
+<style lang="less">
 .container {
   height: 100%;
   display: flex;
@@ -32,7 +36,6 @@ wepy.app({
   },
 
   onLaunch() {
-    console.log(test);
     eventHub.$on('app-launch', (...args) => {
       console.log('app-launch event emitted, the params are:');
       console.log(args);

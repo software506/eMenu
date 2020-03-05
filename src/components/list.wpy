@@ -9,12 +9,17 @@
 <template>
   <div class="list">
     list
+    <div class="weui-btn weui-btn_primary weui-btn_loading">
+      <i class="weui-loading"></i>
+      a
+    </div>
   </div>
 </template>
 <script>
   import wepy from '@wepy/core'
 
   wepy.component({
+    options: { styleIsolation: 'apply-shared' },
     data: {
       list: [
         {

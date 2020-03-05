@@ -17,6 +17,7 @@ module.exports.getTime = getTime;
       <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
       <div class="userinfo-nickname">{{ userInfo.nickName }}</div>
     </div>
+     <div class="weui-btn weui-btn_primary">b</div>
     <list></list>
   </div>
 </template>
