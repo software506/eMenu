@@ -99,4 +99,15 @@ Service.prototype.defaults = {
 export const service = new Service();
 export const setToken = service.setToken;
 export const setSocketId = service.setSocketId;
-export default service.request;
+export default (url, options = {}) =>
+  service.request(url, options)
+    .then((response) => {
+      if (response.code === 0) {
+        return response.data;
+      } else {
+        Promise.reject(response.msg || '出现异常');
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
