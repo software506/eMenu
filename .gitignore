@@ -3,3 +3,5 @@ dist
 .DB_store
 .idea
 package-lock.json
+.wepycache
+.project.config.json
