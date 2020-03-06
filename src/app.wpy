@@ -41,8 +41,9 @@ wepy.app({
       console.log(args);
     });
   },
-  onShow() {
-    test(1)
+  async onShow() {
+    const { name } = await test(1);
+    console.log('name = ', name);
   },
 
   methods: {
