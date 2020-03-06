@@ -1,34 +1,52 @@
-# eMenu
+# 小呱商城
+> A Mini Program base on wepy
 
-### 项目大体结构
+<div>
+<img src="/static/img/mini-code.png" width="300"/>
+</div>
+
+#### 项目介绍
+具备完整功能的购物平台小程序，获取微信用户信息，可以进行正常的添加购物车，添加编辑收货地址，查询订单，支付，上传图片退货。
+
+
+<div>
+<img src="/static/img/home.gif" width="200"/>
+<img src="/static/img/fenlei.gif" width="200"/>
+<img src="/static/img/cart.gif" width="200"/>
+<img src="/static/img/address.gif" width="200"/>
+<img src="/static/img/buy.gif" width="200"/>
+</div>
+
+#### 软件架构
+1. 使用类Vue开发风格框架wepy。
+2. 使用eslint进行代码规范。
+3. 使用wepy-redux进行全局状态管理。
+4. 集成富文本编辑工具对富文本进行自动化解析。
+
+#### 安装教程
+
+``` bash
+git clone git@github.com:sec-secret/x-mall-miniprogram-wepy.git
+
+cd x-mall-miniprogram-wepy
+
+npm install wepy-cli -g
+npm install
+
+npm run dev
+
+运行错误：找不到编译器：wepy-compiler-less
+解决方案：npm install less 后再 npm install wepy-compiler-less 解决
 ```
-emenu
-├── README.md
-├── config // 配置项
-│   └── env // 环境
-│       └── 3003.js
-├── db.js // 文件读写操作
-├── package.json
-├── project.config.json
-├── src
-│   ├── app.wpy
-│   ├── assets
-│   ├── common
-│   │   └── eventHub.js
-│   ├── components
-│   │   └── list.wpy
-│   ├── env.js // 配置文件项，运行时生成
-│   ├── mixins
-│   │   └── test.js
-│   ├── pages
-│   │   └── index.wpy
-│   ├── plugins // 插件
-│   │   └── service.js
-│   ├── server  // 接口相关
-│   │   └── test.js
-│   └── store
-│       └── index.js
-├── static
-├── wepy.config.js
-└── yarn.lock
-```
+
+
+
+#### 参与贡献
+
+1. Fork 本项目
+2. 新建 Feat_xxx 分支
+3. 提交代码
+4. 新建 Pull Request
+
+
+#### 感谢
