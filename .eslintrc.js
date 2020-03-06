@@ -1,6 +1,5 @@
 module.exports = {
   root: true,
-  globals: { wx: true },
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module'
@@ -19,12 +18,26 @@ module.exports = {
   },
   // add your custom rules here
   'rules': {
+    "no-constant-condition": 1,
+    "no-extend-native": "off",
+    "no-new": 'off',
+    "no-fallthrough": 'off',
+    "no-unreachable": 1,
+    "no-unused-vars": 1,
+    "key-spacing": 'off',
+    // 语句强制分号结尾
+    "semi": 'off',
+    'space-before-blocks': 'off',
+    'space-before-function-paren': 'off',
+    'indent': 'off',
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await
-    'generator-star-spacing': 0,
+    'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'space-before-function-paren': 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'vue/require-v-for-key': 'off',
+    'no-undef': 'off',
   }
 }
+

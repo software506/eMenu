@@ -1,7 +1,5 @@
 node_modules
 dist
-weapp
-.DS_Store
-/src/env.js
-/weapp
-tree.txt
+.DB_store
+.idea
+package-lock.json

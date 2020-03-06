@@ -1,13 +1,44 @@
 {
-  "description": "A WePY project",
-  "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "postcss": false,
-    "minified": false
-  },
-  "compileType": "miniprogram",
-  "appid": "touristappid",
-  "projectname": "e-menu",
-  "miniprogramRoot": "./weapp"
+	"description": "xiaogua mall for miniprogram",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wx42fe475bbcb16803",
+	"projectname": "x-mall-miniprogram-wepy-develop",
+	"miniprogramRoot": "dist/",
+	"libVersion": "2.0.0",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "分享到群聊之后点击",
+					"pathName": "pages/other/pay",
+					"query": "payUrl=asdasd2222",
+					"scene": "1008"
+				}
+			]
+		}
+	}
 }
